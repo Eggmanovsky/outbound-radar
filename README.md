@@ -1,5 +1,6 @@
 # 出海雷达 · AI 出海营销助手
-![Uploading f4bf5bb4-ee31-4c9f-9ef5-fb064c75f10a.png…]()
+<img width="1277" height="697" alt="f4bf5bb4-ee31-4c9f-9ef5-fb064c75f10a" src="https://github.com/user-attachments/assets/6d6b957a-645a-45c8-8ed5-3817a7826e31" />
+
 
 > 个人演示作品。面向出海营销服务商的**内部销售工作台**：从一批候选客户里挑出该跟的那一家，一路走到触达、方案、交付和复盘。
 
