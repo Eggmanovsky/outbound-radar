@@ -1,0 +1,23 @@
+{
+  "_note": "只有 free=true 的模型被视为「有免费额度」。llm.py 调用前会校验；不在名单、free=false、或选到图像模型时，界面给出警告。修改后需重启应用（读取结果被缓存）。",
+  "_policy": "这些额度来自用户口述，可能临近/已经过期。平台未说明过期后的计费方式，因此仍可能产生费用：请在百炼控制台设置额度预警，并优先使用 flash 档模型。",
+  "_updated_at": "2026-11-17",
+  "default_model": "qwen3.8-flash",
+  "models": [
+    {"id": "qwen3.8-flash", "provider": "dashscope", "kind": "chat", "free": true, "free_quota": "用户确认有免费额度", "note": "默认模型：延迟低、JSON 输出稳定"},
+    {"id": "qwen3.8-27b", "provider": "dashscope", "kind": "chat", "free": true, "free_quota": "用户确认有免费额度", "note": ""},
+    {"id": "qwen4-max", "provider": "dashscope", "kind": "chat", "free": true, "free_quota": "用户确认有免费额度", "note": "旗舰档，额度通常较小"},
+    {"id": "qwen3.8-max-0902", "provider": "dashscope", "kind": "chat", "free": true, "free_quota": "用户确认有免费额度", "note": "0902 快照版本"},
+    {"id": "kimi-k3", "provider": "dashscope", "kind": "chat", "free": true, "free_quota": "用户确认有免费额度", "note": "长上下文见长"},
+    {"id": "kimi-k3.1-pro", "provider": "dashscope", "kind": "chat", "free": true, "free_quota": "用户确认有免费额度", "note": ""},
+    {"id": "deepseek-v4.1-flash", "provider": "dashscope", "kind": "chat", "free": true, "free_quota": "用户确认有免费额度", "note": ""},
+    {"id": "deepseek-v4.1-flash-1017", "provider": "dashscope", "kind": "chat", "free": true, "free_quota": "用户确认有免费额度", "note": "1017 快照版本"},
+    {"id": "glm-5.3", "provider": "dashscope", "kind": "chat", "free": true, "free_quota": "用户确认有免费额度", "note": ""},
+    {"id": "qwen-image-2.1-pro", "provider": "dashscope", "kind": "image", "free": true, "free_quota": "用户确认有免费额度", "note": "图像模型，不能用于本项目的文本生成"},
+
+    {"id": "qwen-plus", "provider": "dashscope", "kind": "chat", "free": false, "free_quota": "无（已实测产生调用）", "note": "2026-11-17 实测：付费"},
+    {"id": "qwen-max", "provider": "dashscope", "kind": "chat", "free": false, "free_quota": "无", "note": "付费模型"},
+    {"id": "qwen-turbo", "provider": "dashscope", "kind": "chat", "free": false, "free_quota": "未确认", "note": "旧的临时默认值，未在免费名单中"},
+    {"id": "qwen3-coder-30b-a3b-instruct", "provider": "dashscope", "kind": "chat", "free": false, "free_quota": "未确认", "note": "旧 harness 使用的代码模型"}
+  ]
+}

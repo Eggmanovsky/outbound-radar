@@ -1,0 +1,19 @@
+{
+  "customer": "c01",
+  "period": "2026-10-01 ~ 2026-10-31",
+  "note": "模拟投放数据：以 PawPal 美国站 10 月达人 + Spark Ads 组合为背景",
+  "spend_usd": 8200,
+  "impressions": 820000,
+  "clicks": 7380,
+  "conversions": 200,
+  "revenue_usd": 39800,
+  "video_3s_view_rate": 0.22,
+  "benchmark": {
+    "cpm": 10.0,
+    "ctr": 1.2,
+    "cvr": 3.0,
+    "cpa": 28.0,
+    "roas": 7.0,
+    "video_3s_view_rate": 0.35
+  }
+}

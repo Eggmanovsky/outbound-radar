@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# 环境
+.venv/
+venv/
+.env
+.env.*
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store
+
+# Streamlit 本地配置
+.streamlit/secrets.toml
+
+# 演示录屏
+*.mp4
+*.mov
+
+# 个人准备笔记（不进仓库）
+录屏脚本.md
+术语速查.md

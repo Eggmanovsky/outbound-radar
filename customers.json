@@ -1,0 +1,508 @@
+{
+  "meta": {
+    "project": "AI 出海营销助手 · 演示数据",
+    "disclaimer": "本文件中的公司、人物、账号、融资与投放数据全部为虚构，仅用于面试 Demo 演示，不含任何真实客户信息。",
+    "currency": "USD",
+    "prepared_at": "2026-11-17",
+    "primary_case": "c01"
+  },
+
+  "icp": {
+    "description": "AI 出海营销服务的理想客户画像：有出海意图、有付费能力、产品适合短视频表达、决策人可触达。",
+    "threshold": 60,
+    "dimensions": [
+      {
+        "key": "intent",
+        "name": "出海意图",
+        "weight": 0.35,
+        "signals": ["官网多语言", "招聘海外岗位", "海外社媒活跃", "参加海外展会"]
+      },
+      {
+        "key": "budget",
+        "name": "付费能力",
+        "weight": 0.30,
+        "signals": ["近 6 个月融资", "融资轮次在 A 轮及以上", "在扩编"]
+      },
+      {
+        "key": "fit",
+        "name": "内容适配度",
+        "weight": 0.25,
+        "signals": ["产品可视化、演示性强", "面向 C 端", "客单价高于 50 美元"]
+      },
+      {
+        "key": "reach",
+        "name": "可触达性",
+        "weight": 0.10,
+        "signals": ["决策人公开可查", "未被收购或合并", "未被同行长期锁定"]
+      }
+    ]
+  },
+
+  "customers": [
+    {
+      "id": "c01",
+      "name": "爪伴 PawPal",
+      "category": "AI 宠物硬件",
+      "one_liner": "AI 宠物陪伴机器人，可识别宠物情绪并主动互动，售价 199 美元。",
+      "business_model": "DTC 硬件 + 配件复购",
+      "market": ["US", "DE"],
+      "hq": "深圳",
+      "headcount": 45,
+      "funding": {"stage": "A 轮", "amount": "$12M", "date": "2026-08", "investors": "某美元基金领投"},
+      "signals": [
+        "官网提供英、德、日三语版本",
+        "LinkedIn 于 9 月发布 US Marketing Manager 岗位",
+        "TikTok 官方号近 90 天更新 20 条，单条最高 8.2 万播放，平均不足 5000",
+        "在 Meta 广告库与 TikTok Creative Center 均未检出在投素材"
+      ],
+      "snippets": [
+        {"source": "官网 About", "text": "PawPal 已进入美国 2000 个家庭，配件复购收入占比 18%。"},
+        {"source": "TikTok 热门视频", "text": "猫第一次见到 PawPal 的反应（播放 8.2 万，评论 1400 条，多为询问购买链接）"}
+      ],
+      "tiktok": {"handle": "@pawpal.official", "followers": 12000, "posts_90d": 20, "top_views": 82000, "avg_views": 4800, "last_post": "2026-10-28"},
+      "ads": {"active": false, "channels": [], "note": "有爆款素材但未做 Spark Ads 放大"},
+      "dm": {"name": "Kevin Zhang", "title": "CMO", "channel": "LinkedIn"},
+      "competitors": ["Loona", "Ebo", "Tombot"],
+      "facts": {
+        "multi_language_site": true,
+        "hiring_overseas": true,
+        "funding_months_ago": 3,
+        "funding_rank": 1,
+        "consumer_product": true,
+        "price_usd": 199,
+        "demo_visual": true,
+        "dm_public": true,
+        "acquired": false,
+        "tiktok_active": true
+      },
+      "risk": ["A 轮后通常要求 6 个月内看到增长，交付节奏压力大", "宠物类内容同质化严重，需要差异化脚本"]
+    },
+
+    {
+      "id": "c02",
+      "name": "光屿 LumiToy",
+      "category": "AI 互动玩具",
+      "one_liner": "会聊天、能记住孩子喜好的 AI 毛绒玩具，售价 79 美元。",
+      "business_model": "DTC 硬件 + 内容订阅",
+      "market": ["US", "UK"],
+      "hq": "杭州",
+      "headcount": 22,
+      "funding": {"stage": "天使轮", "amount": "$3M", "date": "2026-05", "investors": "两家天使基金"},
+      "signals": [
+        "官网仅中英双语，无欧洲本地化",
+        "Amazon 美国站月销 800 件以上，评论 600+",
+        "TikTok 有 40 多条用户自发视频，但官方号自 7 月起停更",
+        "创始人 10 月在 X 上公开寻找美国市场增长伙伴"
+      ],
+      "snippets": [
+        {"source": "Amazon 商品页", "text": "4.6 星，600+ 评价，差评集中在“联网后反应慢”。"},
+        {"source": "创始人 X", "text": "Looking for a growth partner for our US launch in Q1."}
+      ],
+      "tiktok": {"handle": "@lumitoy", "followers": 3400, "posts_90d": 0, "top_views": 31000, "avg_views": 2600, "last_post": "2026-07-02"},
+      "ads": {"active": false, "channels": [], "note": "无付费投放"},
+      "dm": {"name": "Lily Chen", "title": "创始人", "channel": "X / 邮件"},
+      "competitors": ["Moxie", "Grok 玩具类竞品"],
+      "facts": {
+        "multi_language_site": true,
+        "hiring_overseas": false,
+        "funding_months_ago": 6,
+        "funding_rank": 0,
+        "consumer_product": true,
+        "price_usd": 79,
+        "demo_visual": true,
+        "dm_public": true,
+        "acquired": false,
+        "tiktok_active": false
+      },
+      "risk": ["天使轮预算有限，首单通常压到 5000 美元以下", "产品差评涉及体验问题，营销放大会放大负面"]
+    },
+
+    {
+      "id": "c03",
+      "name": "目行 AeroLens",
+      "category": "AI 智能眼镜",
+      "one_liner": "实时翻译与提词的 AI 眼镜，售价 299 美元。",
+      "business_model": "DTC + 线下渠道",
+      "market": ["US", "EU", "JP"],
+      "hq": "北京",
+      "headcount": 120,
+      "funding": {"stage": "A+ 轮", "amount": "$25M", "date": "2026-02", "investors": "头部机构"},
+      "signals": [
+        "官网英、法、日三语",
+        "Meta 广告库可查到 12 条在投素材，TikTok 亦有投放在跑",
+        "正在招聘海外 PR 与渠道经理",
+        "CES 2026 有独立展位"
+      ],
+      "snippets": [
+        {"source": "广告库素材", "text": "Travel without language barriers · 30s 场景短片"},
+        {"source": "官网新闻", "text": "AeroLens 与两家日本旅行社达成渠道合作。"}
+      ],
+      "tiktok": {"handle": "@aerolens", "followers": 86000, "posts_90d": 45, "top_views": 2100000, "avg_views": 65000, "last_post": "2026-11-12"},
+      "ads": {"active": true, "channels": ["Meta", "TikTok", "Google"], "note": "有内部投放团队或代理在服务"},
+      "dm": {"name": "David Wu", "title": "VP Marketing", "channel": "LinkedIn"},
+      "competitors": ["Ray-Ban Meta", "Even Realities"],
+      "facts": {
+        "multi_language_site": true,
+        "hiring_overseas": true,
+        "funding_months_ago": 9,
+        "funding_rank": 2,
+        "consumer_product": true,
+        "price_usd": 299,
+        "demo_visual": true,
+        "dm_public": true,
+        "acquired": false,
+        "tiktok_active": true
+      },
+      "risk": ["已有成熟投放团队，替换成本高", "大厂同类产品竞争，内容角度难差异化"]
+    },
+
+    {
+      "id": "c04",
+      "name": "声记 EchoNote",
+      "category": "AI 办公硬件",
+      "one_liner": "会议自动转写与摘要的 AI 录音笔，售价 129 美元。",
+      "business_model": "硬件 + 会员订阅",
+      "market": ["US"],
+      "hq": "苏州",
+      "headcount": 30,
+      "funding": {"stage": "种子轮", "amount": "$5M", "date": "2026-09", "investors": "产业资本"},
+      "signals": [
+        "官网仅英文",
+        "Kickstarter 超募 320%，交付刚完成",
+        "TikTok 官方号两个月更新 6 条，平均 1800 播放",
+        "招聘跨境电商运营"
+      ],
+      "snippets": [
+        {"source": "Kickstarter", "text": "1,842 名支持者，超募 320%，已于 9 月完成发货。"},
+        {"source": "官网", "text": "EchoNote 支持 32 种语言实时转写，续航 18 小时。"}
+      ],
+      "tiktok": {"handle": "@echonote.ai", "followers": 2100, "posts_90d": 6, "top_views": 12000, "avg_views": 1800, "last_post": "2026-11-05"},
+      "ads": {"active": false, "channels": [], "note": "无付费投放"},
+      "dm": {"name": "Sarah Lin", "title": "Marketing Lead", "channel": "LinkedIn"},
+      "competitors": ["Plaud", "Limitless"],
+      "facts": {
+        "multi_language_site": false,
+        "hiring_overseas": true,
+        "funding_months_ago": 2,
+        "funding_rank": 0,
+        "consumer_product": true,
+        "price_usd": 129,
+        "demo_visual": false,
+        "dm_public": true,
+        "acquired": false,
+        "tiktok_active": true
+      },
+      "risk": ["录音笔外形普通，短视频演示性弱", "同赛道已有强势品牌，内容易被比较"]
+    },
+
+    {
+      "id": "c05",
+      "name": "心伴 MindPals",
+      "category": "AI 情感陪伴应用",
+      "one_liner": "AI 情感陪伴 App，订阅制，月费 9.9 美元。",
+      "business_model": "订阅",
+      "market": ["US", "BR", "ID"],
+      "hq": "上海",
+      "headcount": 60,
+      "funding": {"stage": "B 轮", "amount": "$40M", "date": "2025-11", "investors": "多家中美基金"},
+      "signals": [
+        "官网支持 6 种语言",
+        "App Store 美区社交类畅销榜前 50",
+        "TikTok 上有 #mindpals 话题，播放量 300 万+",
+        "已在 Meta 与 Google 持续投放"
+      ],
+      "snippets": [
+        {"source": "App Store", "text": "4.5 星，12 万条评价，付费转化率官方未披露。"},
+        {"source": "行业媒体", "text": "MindPals 月流水据估算约 180 万美元。"}
+      ],
+      "tiktok": {"handle": "@mindpals.app", "followers": 210000, "posts_90d": 60, "top_views": 1500000, "avg_views": 42000, "last_post": "2026-11-14"},
+      "ads": {"active": true, "channels": ["Meta", "Google", "TikTok"], "note": "成熟投放体系"},
+      "dm": {"name": "Leo Sun", "title": "Growth Director", "channel": "LinkedIn"},
+      "competitors": ["Character.AI", "Replika"],
+      "facts": {
+        "multi_language_site": true,
+        "hiring_overseas": false,
+        "funding_months_ago": 12,
+        "funding_rank": 3,
+        "consumer_product": true,
+        "price_usd": 9.9,
+        "demo_visual": false,
+        "dm_public": true,
+        "acquired": false,
+        "tiktok_active": true
+      },
+      "risk": ["订阅类 LTV 依赖留存，服务商难以承诺结果", "内部增长团队成熟，外部服务空间小"]
+    },
+
+    {
+      "id": "c06",
+      "name": "小厨 TinyChef",
+      "category": "AI 厨房硬件",
+      "one_liner": "能自动翻炒并语音指导的 AI 厨房机器人，售价 499 美元。",
+      "business_model": "DTC 硬件",
+      "market": ["US"],
+      "hq": "佛山",
+      "headcount": 80,
+      "funding": {"stage": "A 轮", "amount": "$18M", "date": "2026-04", "investors": "消费硬件基金"},
+      "signals": [
+        "官网中英双语",
+        "YouTube 测评视频单条 50 万播放",
+        "TikTok 无官方账号，仅有零散用户内容",
+        "正在招聘海外渠道负责人"
+      ],
+      "snippets": [
+        {"source": "YouTube", "text": "I cooked 30 meals with this robot — honest review（50 万播放）"},
+        {"source": "官网", "text": "TinyChef 已通过 UL 认证，进入美国 12 家线下门店。"}
+      ],
+      "tiktok": {"handle": "", "followers": 0, "posts_90d": 0, "top_views": 0, "avg_views": 0, "last_post": ""},
+      "ads": {"active": false, "channels": [], "note": "尚未开始社媒投放"},
+      "dm": {"name": "Grace He", "title": "海外市场负责人", "channel": "LinkedIn"},
+      "competitors": ["June Oven", "Chefman"],
+      "facts": {
+        "multi_language_site": true,
+        "hiring_overseas": true,
+        "funding_months_ago": 7,
+        "funding_rank": 1,
+        "consumer_product": true,
+        "price_usd": 499,
+        "demo_visual": true,
+        "dm_public": true,
+        "acquired": false,
+        "tiktok_active": false
+      },
+      "risk": ["客单价高，决策周期长", "厨房大件物流与退货成本高，投放 ROI 压力大"]
+    },
+
+    {
+      "id": "c07",
+      "name": "SpeakUp 口语",
+      "category": "AI 教育应用",
+      "one_liner": "AI 英语口语陪练，订阅制，月费 9.9 美元。",
+      "business_model": "订阅",
+      "market": ["SEA", "US"],
+      "hq": "广州",
+      "headcount": 35,
+      "funding": {"stage": "A 轮", "amount": "$8M", "date": "2026-07", "investors": "教育基金"},
+      "signals": [
+        "官网中英双语",
+        "增长主要来自 SEO 与 YouTube 长视频",
+        "目标用户在 LinkedIn 与高校社群",
+        "无 TikTok 官方账号"
+      ],
+      "snippets": [
+        {"source": "官网", "text": "已服务 120 万学习者，日活 8 万。"},
+        {"source": "招聘 JD", "text": "海外市场专员：负责 Google 与 YouTube 渠道。"}
+      ],
+      "tiktok": {"handle": "", "followers": 0, "posts_90d": 0, "top_views": 0, "avg_views": 0, "last_post": ""},
+      "ads": {"active": true, "channels": ["Google", "YouTube"], "note": "以搜索与长视频为主"},
+      "dm": {"name": "Amy Zhou", "title": "市场总监", "channel": "LinkedIn"},
+      "competitors": ["Speak", "ELSA"],
+      "facts": {
+        "multi_language_site": true,
+        "hiring_overseas": false,
+        "funding_months_ago": 4,
+        "funding_rank": 1,
+        "consumer_product": true,
+        "price_usd": 9.9,
+        "demo_visual": false,
+        "dm_public": true,
+        "acquired": false,
+        "tiktok_active": false
+      },
+      "risk": ["教育订阅在 TikTok 的转化普遍低于搜索渠道", "客单价低，难以覆盖服务费"]
+    },
+
+    {
+      "id": "c08",
+      "name": "码舟 CodePilot",
+      "category": "AI 开发者工具",
+      "one_liner": "面向开发者的 AI 编程助手，月费 19 美元。",
+      "business_model": "订阅（团队版）",
+      "market": ["Global"],
+      "hq": "北京",
+      "headcount": 150,
+      "funding": {"stage": "B 轮", "amount": "$30M", "date": "2026-01", "investors": "美元基金"},
+      "signals": [
+        "官网全英文",
+        "增长来自开发者社区与 GitHub",
+        "在 Sponsored 技术播客投放",
+        "无消费级产品线"
+      ],
+      "snippets": [
+        {"source": "官网", "text": "Trusted by 4000+ engineering teams."},
+        {"source": "技术播客", "text": "本节目由 CodePilot 赞助。"}
+      ],
+      "tiktok": {"handle": "", "followers": 0, "posts_90d": 0, "top_views": 0, "avg_views": 0, "last_post": ""},
+      "ads": {"active": true, "channels": ["Google", "LinkedIn", "播客"], "note": "B2B 投放"},
+      "dm": {"name": "Tom Qiu", "title": "Head of Growth", "channel": "LinkedIn"},
+      "competitors": ["Cursor", "GitHub Copilot"],
+      "facts": {
+        "multi_language_site": false,
+        "hiring_overseas": false,
+        "funding_months_ago": 10,
+        "funding_rank": 2,
+        "consumer_product": false,
+        "price_usd": 19,
+        "demo_visual": false,
+        "dm_public": true,
+        "acquired": false,
+        "tiktok_active": false
+      },
+      "risk": ["目标人群不在 TikTok，内容转化极低", "B2B 决策链长，服务商难以介入"]
+    },
+
+    {
+      "id": "c09",
+      "name": "眠带 SleepBand",
+      "category": "AI 可穿戴",
+      "one_liner": "监测睡眠并自动调节的 AI 头带，售价 149 美元。",
+      "business_model": "DTC 硬件 + 订阅",
+      "market": ["US"],
+      "hq": "东莞",
+      "headcount": 18,
+      "funding": {"stage": "天使轮", "amount": "$2M", "date": "2026-10", "investors": "个人天使"},
+      "signals": [
+        "官网仅英文",
+        "TikTok 有 3 条自测视频，最高 1.2 万播放",
+        "正在招聘海外 KOL 运营",
+        "尚未开通亚马逊店铺"
+      ],
+      "snippets": [
+        {"source": "TikTok", "text": "30 days sleeping with an AI headband（1.2 万播放）"},
+        {"source": "官网", "text": "SleepBand 已获得 FCC 认证，首批 5000 台已入库。"}
+      ],
+      "tiktok": {"handle": "@sleepband", "followers": 900, "posts_90d": 3, "top_views": 12000, "avg_views": 4000, "last_post": "2026-10-20"},
+      "ads": {"active": false, "channels": [], "note": "无投放"},
+      "dm": {"name": "Jason Ye", "title": "联合创始人", "channel": "LinkedIn"},
+      "competitors": ["Muse", "Whoop"],
+      "facts": {
+        "multi_language_site": false,
+        "hiring_overseas": true,
+        "funding_months_ago": 1,
+        "funding_rank": 0,
+        "consumer_product": true,
+        "price_usd": 149,
+        "demo_visual": true,
+        "dm_public": true,
+        "acquired": false,
+        "tiktok_active": true
+      },
+      "risk": ["团队仅 18 人，无人对接营销项目", "睡眠品类教育成本高，冷启动周期长"]
+    },
+
+    {
+      "id": "c10",
+      "name": "宠语 PetVoice",
+      "category": "AI 宠物硬件",
+      "one_liner": "把宠物叫声翻译成情绪标签的挂件，售价 59 美元。",
+      "business_model": "众筹 + DTC",
+      "market": ["US"],
+      "hq": "深圳",
+      "headcount": 12,
+      "funding": {"stage": "众筹", "amount": "$1.2M", "date": "2026-06", "investors": "Kickstarter 支持者"},
+      "signals": [
+        "众筹页面播放量高，#pettranslator 话题在 TikTok 有自然热度",
+        "交付两度延期，评论区怨气明显",
+        "团队仅 12 人，无海外市场人员"
+      ],
+      "snippets": [
+        {"source": "众筹评论区", "text": "Ordered in June, still waiting. 已两次延期。"},
+        {"source": "TikTok 话题", "text": "#pettranslator 累计播放 800 万，多为用户自拍测试。"}
+      ],
+      "tiktok": {"handle": "@petvoice", "followers": 15000, "posts_90d": 12, "top_views": 210000, "avg_views": 18000, "last_post": "2026-11-01"},
+      "ads": {"active": false, "channels": [], "note": "无付费投放"},
+      "dm": {"name": "Roy Deng", "title": "创始人", "channel": "邮件"},
+      "competitors": ["FluentPet", "MeowTalk"],
+      "facts": {
+        "multi_language_site": false,
+        "hiring_overseas": false,
+        "funding_months_ago": 5,
+        "funding_rank": 0,
+        "consumer_product": true,
+        "price_usd": 59,
+        "demo_visual": true,
+        "dm_public": true,
+        "acquired": false,
+        "tiktok_active": true
+      },
+      "risk": ["供应链未稳，营销放大会放大交付风险", "口碑处于负面区间，接单等于接雷"]
+    },
+
+    {
+      "id": "c11",
+      "name": "家卫 HomeBot",
+      "category": "AI 家庭机器人",
+      "one_liner": "家庭安防巡逻机器人，售价 399 美元。",
+      "business_model": "DTC + 渠道",
+      "market": ["US", "EU"],
+      "hq": "南京",
+      "headcount": 90,
+      "funding": {"stage": "已被收购", "amount": "—", "date": "2026-09", "investors": "某 A 股上市公司"},
+      "signals": [
+        "2026 年 9 月被上市公司全资收购",
+        "收购公告称“渠道并入集团体系”",
+        "官网停止更新，TikTok 号自 8 月起停更"
+      ],
+      "snippets": [
+        {"source": "收购公告", "text": "标的公司渠道与品牌将并入集团海外事业部。"},
+        {"source": "官网", "text": "最后更新：2026-08-14"}
+      ],
+      "tiktok": {"handle": "@homebot", "followers": 26000, "posts_90d": 0, "top_views": 60000, "avg_views": 9000, "last_post": "2026-08-02"},
+      "ads": {"active": false, "channels": [], "note": ""},
+      "dm": {"name": "—", "title": "—", "channel": "—"},
+      "competitors": ["Ring", "Eufy"],
+      "facts": {
+        "multi_language_site": true,
+        "hiring_overseas": false,
+        "funding_months_ago": 2,
+        "funding_rank": 2,
+        "consumer_product": true,
+        "price_usd": 399,
+        "demo_visual": true,
+        "dm_public": false,
+        "acquired": true,
+        "tiktok_active": false
+      },
+      "risk": ["收购后采购权收归集团，外部服务商基本进不去"]
+    },
+
+    {
+      "id": "c12",
+      "name": "星绘 StarDraw",
+      "category": "AI 儿童硬件",
+      "one_liner": "面向儿童的 AI 绘画平板，售价 89 美元。",
+      "business_model": "DTC 硬件",
+      "market": ["US", "JP"],
+      "hq": "上海",
+      "headcount": 55,
+      "funding": {"stage": "A 轮", "amount": "$10M", "date": "2026-03", "investors": "消费基金"},
+      "signals": [
+        "官网英、日双语",
+        "TikTok 儿童绘画相关话题自然热度高",
+        "在招海外品牌经理",
+        "亚马逊日本站已有销量"
+      ],
+      "snippets": [
+        {"source": "官网", "text": "StarDraw 已进入日本 200 家线下门店。"},
+        {"source": "亚马逊", "text": "日本站月销 300 台，评分 4.3。"}
+      ],
+      "tiktok": {"handle": "@stardraw", "followers": 5400, "posts_90d": 9, "top_views": 45000, "avg_views": 7000, "last_post": "2026-10-15"},
+      "ads": {"active": false, "channels": [], "note": "零星投放，无体系"},
+      "dm": {"name": "Nina Xu", "title": "品牌负责人", "channel": "LinkedIn"},
+      "competitors": ["Osmo", "XPPen 儿童线"],
+      "facts": {
+        "multi_language_site": true,
+        "hiring_overseas": true,
+        "funding_months_ago": 8,
+        "funding_rank": 1,
+        "consumer_product": true,
+        "price_usd": 89,
+        "demo_visual": true,
+        "dm_public": true,
+        "acquired": false,
+        "tiktok_active": true
+      },
+      "risk": ["儿童品类广告合规要求高，素材审核严", "家长决策链长，转化周期比玩具更长"]
+    }
+  ]
+}
