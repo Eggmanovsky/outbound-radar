@@ -32,7 +32,7 @@
 - 依赖：`streamlit`、`openai`、`pandas`
 
 ```bash
-pip install streamlit openai pandas
+pip install -r requirements.txt
 ```
 
 ### 配置 API Key
